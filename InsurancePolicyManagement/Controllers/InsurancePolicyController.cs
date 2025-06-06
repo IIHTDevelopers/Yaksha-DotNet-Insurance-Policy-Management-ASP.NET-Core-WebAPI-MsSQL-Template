@@ -20,7 +20,7 @@ namespace InsurancePolicyManagement.Controllers
         }
 
         [HttpPost]
-        [Route("create-policy")]
+        [Route("policy")]
         [AllowAnonymous]
         public async Task<IActionResult> CreateInsurancePolicy([FromBody] InsurancePolicy model)
         {
@@ -30,7 +30,7 @@ namespace InsurancePolicyManagement.Controllers
 
 
         [HttpPut]
-        [Route("update-policy")]
+        [Route("policy")]
         public async Task<IActionResult> UpdateInsurancePolicy([FromBody] InsurancePolicyViewModel model)
         {
             //write your code here
@@ -38,7 +38,7 @@ namespace InsurancePolicyManagement.Controllers
         }
 
         [HttpDelete]
-        [Route("delete-policy")]
+        [Route("policy")]
         public async Task<IActionResult> DeleteInsurancePolicy(long id)
         {
             //write your code here
@@ -47,7 +47,7 @@ namespace InsurancePolicyManagement.Controllers
 
 
         [HttpGet]
-        [Route("get-policy-by-id")]
+        [Route("policy")]
         public async Task<IActionResult> GetInsurancePolicyById(long id)
         {
             //write your code here
@@ -55,7 +55,7 @@ namespace InsurancePolicyManagement.Controllers
         }
 
         [HttpGet]
-        [Route("get-all-policies")]
+        [Route("policies")]
         public async Task<IEnumerable<InsurancePolicy>> GetAllPolicies()
         {
             //write your code here
